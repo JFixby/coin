@@ -12,7 +12,7 @@ func (a Amount) String() string {
 	return fmt.Sprintf("%v coins", a.ToCoins())
 }
 
-func CoinsAmountFromFloat(coinsFloat float64) Amount {
+func FromFloat(coinsFloat float64) Amount {
 	return Amount{int64(coinsFloat * AtomsPerCoin)}
 }
 
